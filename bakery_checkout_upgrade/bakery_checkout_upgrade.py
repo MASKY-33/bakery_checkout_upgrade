@@ -4,23 +4,17 @@ def bedrag():
     hoeveelheid = int(input("Product hoeveelheid: "))
 
 
-    # (totaal_bedrag) te gebruiken voor beide berekeningen 'standaard bedrag' en '10% korting'
-    # Als nodig voor oefening, (totaal_bedrag) gebruiken voor '10% korting'. Een andere var' voor 'standaard bedrag'
     totaal_bedrag = totaal(prijs, hoeveelheid)
 
-
-
-    # Als nodig, var' voor (standaard_bedrag)
-
-
-    # Voor de print() Function
+    print(f"Klant heeft {hoeveelheid}x van {product_naam}. Bedrag te betalen, €{totaal_bedrag:.2f}")
 
 
 
 def totaal(prijs, hoeveelheid):
-    
-
-
+    if hoeveelheid >= 5:
+        return prijs * hoeveelheid - (prijs * hoeveelheid) * 0.10 # <-- Eerst; 'prijs * hoeveelheid' vooraan de (-), 2de; '(prijs * hoeveelheid) * 0,10', 3de; 'prijs * hoeveelheid vooraan de (-)' met de uitkomst van (prijs * hoeveelheid) * 0.10
+    else:
+        return prijs * hoeveelheid
 
 
 bedrag()
