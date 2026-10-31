@@ -1,4 +1,4 @@
 # bakery_checkout_upgrade
 
-Upgraded version of the 'backery_checkout' - (Functions) together with (conditionals).
+backery_checkout '1.0' - (Functions) together with (conditionals).
 
